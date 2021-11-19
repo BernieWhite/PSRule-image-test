@@ -2,7 +2,7 @@
 version: v1.1.0
 steps:
   - build: -t $Registry/ps-rule:alpine-3.14 -f ./release/stable/alpine-3.14/Dockerfile .
-  - build: -t $Registry/ps-rule:ubuntu-20.04 -f ./release/stable/alpine-3.14/Dockerfile .
+  - build: -t $Registry/ps-rule:ubuntu-20.04 -f ./release/stable/ubuntu-20.04/Dockerfile .
   - push:
     - $Registry/ps-rule:alpine-3.14
     - $Registry/ps-rule:ubuntu-20.04
